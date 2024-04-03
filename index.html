@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap cviceni 2</title>
+    <link rel="stylesheet" href="hlavni.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="bg-light mt-5">
+      <!-- Začátek webowky -->
+      <!-- nabar -->
+      <div>
+        <nav class="navbar navbar-expand-lg fixed-top bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#ofirme"
+                  >O firmě</a
+                >
+                <a class="nav-link" href="#zabyvame">Čím se zabýváme</a>
+                <a class="nav-link" href="#cenik">Ceník</a>
+                <a class="nav-link" href="#kontakt">Kontakt</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Konec navbaru -->
+      </div>
+      <!-- |První sekce s obrázkem začátek -->
+      <span id="home"></span>
+      <div class="obrazek">
+        <section class="my-5 py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- název -->
+
+                <h2 class="text-center text-dark fs-1">ADVENTIX</h2>
+                <br />
+
+                <!-- motto -->
+                <p class="text-info fs-2">
+                  "Je nesmírně důležité ukázat světu své poznatky. My
+                  obohacujeme svět, protože svět je náš prostor :-) "
+                </p>
+                <br />
+
+                <!-- modal -->
+
+                <!-- Button trigger modal -->
+                <div class="text-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    info Cookies
+                  </button>
+                </div>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-bs-backdrop="static"
+                  data-bs-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                          I my používáme cookies !
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        Níže souhlasíte s používáním s funkčními cookies
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Souhlasím
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Learn more
+
+                          <!-- smajlík -->
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-emoji-smile-upside-down"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0"
+                            />
+                            <path
+                              d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- konec modalu -->
+              </div>
+            </div>
+          </div>
+          <!-- |První sekce s obrázkem konec -->
+        </section>
+      </div>
+
+      <!-- druhá sekce Carusel + tooltip -->
+      <div>
+        <span id="ofirme"></span>
+        <section class="my-5 py-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="text-center text-dark fs-1">O firmě ADVENTIX</h2>
+              <div class="col-12 col-lg-8">
+                <!-- carusel   -->
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide"
+                  data-bs-ride="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./paty.jpg"
+                        class="d-block w-100 karuzel"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Naše hory</h5>
+                        <p>Expedice po stopách horských vůdců</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./ctvrty.jpg"
+                        class="d-block w-100 karuzel"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Červené jezero</h5>
+                        <p>Expedice do útrop lávového jezera</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./treti.jpg"
+                        class="d-block w-100 karuzel"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Zázračné vodopády</h5>
+                        <p>Expedice napříč tajemnými vodopády</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <!-- konec caruselu -->
+              </div>
+              <div class="col-12 col-lg-4">
+                <!-- text vedle caruselu -->
+                <p class="fs-5">
+                  "ADVENTIX je váš průvodce do světa dobrodružství a objevování.
+                  Jsme dynamická cestovní agentura specializující se na
+                  <span
+                    class="pismo"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Unikátní zážitky ADVENTIX"
+                  >
+                    unikátní zážitky
+                  </span>
+                  a nezapomenutelné dovolené po celém světě. Naše vášeň pro
+                  objevování nových destinací nás vede k tomu, abychom našim
+                  klientům přinášeli exkluzivní zážitky, které nejsou dostupné
+                  běžným turistům. Od epických expedic do divočiny až po luxusní
+                  pobyt na odlehlých plážích, AVENTIX spojuje dobrodružství s
+                  pohodlím a luxusem. S naším týmem zkušených průvodců a
+                  osobního přístupu k každému klientovi vám zaručujeme
+                  nezapomenutelné cestování, které překročí vaše očekávání.
+                  Připravte se na dobrodružství svého života s ADVENTIX!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- třetí sekce čím se zabýváme 3 sloupce -->
+      <div>
+        <span id="zabyvame"></span>
+        <section class="my-5 py-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="text-center text-dark fs-1">Čím se zabýváme?</h2>
+              <div class="col-12 col-lg-4">
+                <img
+                  class="d-none d-lg-block obrazky"
+                  src="./paty.jpg"
+                  alt="obrázek"
+                />
+                <h4 class="text-center text-dark">Hory</h4>
+                <p>
+                  Uvědomte si pocit svobody a pokory při pohledu na obrovské
+                  vrcholky hor, které se zdají dosahovat až ke hvězdám. Každý
+                  krok vystoupáváte výše do oblačného nebe, prozkoumáváte
+                  divokou krásu horských údolí a odkrýváte tajemství starých
+                  stezek
+                </p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <img
+                  class="d-none d-lg-block obrazky"
+                  src="ctvrty.jpg"
+                  alt="obrazek"
+                />
+                <h4 class="text-center text-dark">Jezera</h4>
+                <p>
+                  Představte si bouřlivou sílu přírody, která tvoří ohnivé
+                  jezero lávy, jehož žhavý povrch tvoří surreální krajinnou
+                  kulisu. Ocitněte se v srdci sopečného souhvězdí, kde se
+                  setkává síla a krása, a prožijte nezapomenutelné dobrodružství
+                  v ohnivém pekle.
+                </p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <img
+                  class="d-none d-lg-block obrazky"
+                  src="treti.jpg"
+                  alt="obrázek"
+                />
+                <h4 class="text-center text-dark">Vodopády</h4>
+                <p>
+                  Ponořte se do osvěžující síly vody, která padá do hlubokých
+                  údolí s hukotem jako dychtivý skokan. Zářivé oblaka sprejů vás
+                  obklopují, když se křišťálově čistá voda kaskádovitě hrne
+                  dolů, tvořící neuvěřitelné panoramatické pohledy a naplňující
+                  vzduch energií života.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- čtvrtá sekce ceník  -->
+
+      <div>
+        <span id="cenik"></span>
+        <section class="my-5 py-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="text-center text-dark fs-1">Ceník</h2>
+              <div class="col-12 col-md-6 offset-md-3 text-center">
+                <table class="table table-secondary table-hover">
+                  <thead>
+                    <tr>
+                      <th>Výkon</th>
+                      <th>Varianta standard</th>
+                      <th>Varianta exklusive</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Hory</td>
+                      <td>200 $/den</td>
+                      <td>250 $/den</td>
+                    </tr>
+                    <tr>
+                      <td>Jezero</td>
+                      <td>100 $/den</td>
+                      <td>150 $/den</td>
+                    </tr>
+                    <tr>
+                      <td>Vodopády</td>
+                      <td>100 $/den</td>
+                      <td>150 $/den</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- pátá sekce patička s formulářem -->
+
+      <div>
+        <span id="kontakt"></span>
+        <section class="my-5 py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-center text-dark fs-1">Kontakt</h2>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-geo-alt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                  />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+                <div class="fs-3">
+                  <br />
+                  Pivovarníků 36 <br />
+                  Markveltovice <br />185 36 <br /><br />
+                  Czeh Republic
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20598.75258362122!2d18.288370505688526!3d49.80779905609326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1711805870779!5m2!1scs!2scz"
+                  width="500"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="col-12 text-center">
+                <h5>Zanechte svoje údaje, ozveme se Vám !</h5>
+                <form class="mb-3 form-control form-control-lg" action="">
+                  <div class="row text-start">
+                    <div class="col-12 col-lg-4">
+                      <label for="jmeno" class="form-lable col-2"
+                        >&nbsp;Jméno:</label
+                      >
+                      <input name="jmeno" type="text" class="col-10" />
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <label for="email" class="form-lable col-2"
+                        >&nbsp;E-mail:
+                      </label>
+                      <input
+                        name="email"
+                        type="email"
+                        value="@"
+                        class="col-10"
+                      />
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                      <label for="adresa" class="form-lable col-2"
+                        >Adresa:</label
+                      >
+                      <input name="adresa" type="text" class="col-10" />
+                      <br />
+                    </div>
+                  </div>
+                  <div class="text-start">
+                    <input
+                      type="submit"
+                      value="Odešli"
+                      class="btn btn-primary"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Konec webovky -->
+    </div>
+
+    <!-- scrip na konec body -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //navbar
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const collapseNavbar = function () {
+          // Ověříme, zda je navigační menu v rozbalovacím režimu
+          if (window.innerWidth < 992) {
+            const bsCollapse = new bootstrap.Collapse(
+              navbarToggler.nextElementSibling,
+              {
+                toggle: false,
+              }
+            );
+            bsCollapse.hide();
+          }
+        };
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", collapseNavbar);
+        });
+
+        //Vysvětlení:
+        // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
+        // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
+        // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
+        // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
+        // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+
+        //tooltip
+        const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+          (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+      });
+    </script>
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+// tady úpravy scss
+
+$primary: #9b98a4;
+$secondary: #9a9797;
+$light: #f5f2f4;
+$dark: #413f3a;
+$info: #9a9797;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+// tady můžu dávat svoje kaskády
+
+.obrazek {
+  background-image: url(./druhy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.karuzel {
+  max-height: 500px;
+}
+
+.pismo {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.obrazky {
+  width: 90%;
+}
